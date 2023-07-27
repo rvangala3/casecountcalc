@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Count Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Case Count Calculator</h1>
+<h2> -suggested by David Corrales </h2>
+    <label for="totalUnits">Total Units:</label>
+    <input type="number" id="totalUnits" min="1" value="1">
+    
+    <label for="unitsPerCase">Units per Case:</label>
+    <input type="number" id="unitsPerCase" min="1" value="1">
+
+    <button onclick="calculateQuantities()">Calculate</button>
+
+    <div id="result" class="result-container">
+      <p>Partial Units: <span id="partialUnits">0</span></p>
+      <p>Full Cases: <span id="fullCases">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
